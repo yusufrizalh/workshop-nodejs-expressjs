@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Form Unggah File</title>
+</head>
+<body>
+    <h3>Mengunggah File:</h3>
+    
+    <!-- single file -->
+    <p>Pilih file single untuk diunggah:</p>
+    <form action="http://localhost:8081/file_single" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <br> <br>
+        <input type="submit" value="Unggah File Single">
+    </form>
+
+    <hr>
+    <!-- multi file -->
+    <p>Pilih file multiple untuk diunggah:</p>
+    <form action="http://localhost:8081/file_multi" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" multiple>
+        <br> <br>
+        <input type="submit" value="Unggah File Multi">
+    </form>
+</body>
+</html>
